@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Part_4_Markdown_Cells</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+{ “cells”: [ { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “# Markdown Cells” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “Text can be added to IPython Notebooks using Markdown cells. Markdown is a popular markup language that is a superset of HTML. Its specification can be found here:”, “”, “<a href="http://daringfireball.net/projects/markdown/" class="uri">http://daringfireball.net/projects/markdown/</a>” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## Markdown basics” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “You can make text <em>italic</em> or <strong>bold</strong>.” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “You can build nested itemized or enumerated lists:”, “”, “* One”, &quot; - Sublist“,” - This“,” - Sublist“,” - That“,” - The other thing“,”* Two“,” - Sublist“,”* Three“,” - Sublist“,”“,”Now another list:“,”“,”1. Here we go“,” 1. Sublist“,” 2. Sublist“,”2. There we go“,”3. Now this&quot; ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “You can add horizontal rules:”, “”, “—” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “Here is a blockquote:”, “”, “&gt; Beautiful is better than ugly.”, “&gt; Explicit is better than implicit.”, “&gt; Simple is better than complex.”, “&gt; Complex is better than complicated.”, “&gt; Flat is better than nested.”, “&gt; Sparse is better than dense.”, “&gt; Readability counts.”, “&gt; Special cases aren’t special enough to break the rules.”, “&gt; Although practicality beats purity.”, “&gt; Errors should never pass silently.”, “&gt; Unless explicitly silenced.”, “&gt; In the face of ambiguity, refuse the temptation to guess.”, “&gt; There should be one– and preferably only one –obvious way to do it.”, “&gt; Although that way may not be obvious at first unless you’re Dutch.”, “&gt; Now is better than never.”, “&gt; Although never is often better than <em>right</em> now.”, “&gt; If the implementation is hard to explain, it’s a bad idea.”, “&gt; If the implementation is easy to explain, it may be a good idea.”, “&gt; Namespaces are one honking great idea – let’s do more of those!” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “And shorthand for links:”, “”, “<a href="http://ipython.org">IPython’s website</a>” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## Headings” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “If you want, you can add headings using Markdown’s syntax:”, “”, “# Heading 1”, “# Heading 2”, “## Heading 2.1”, “## Heading 2.2” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “<strong>BUT most of the time you should use the Notebook’s Heading Cells to organize your Notebook content</strong>, as they provide meaningful structure that can be interpreted by other tools, not just large bold fonts.” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## Embedded code” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “You can embed code meant for illustration instead of execution in Python:”, “”, &quot; def f(x):“,” &quot;&quot;&quot;a docstring&quot;&quot;&quot;“,” return x**2“,”“,”or other languages:“,”“,” if (i=0; i&lt;n; i++) {“,” printf(&quot;hello %d\n&quot;, i);“,” x += 4;“,” }&quot; ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## LaTeX equations” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “Courtesy of MathJax, you can include mathematical expressions both inline: ”, “<span class="math inline">$e^{i\\pi} + 1 = 0$</span> and displayed:”, “”, “<br /><span class="math display">$$e^x=\\sum_{i=0}^\\infty \\frac{1}{i!}x^i$$</span><br />” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## General HTML” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “Because Markdown is a superset of HTML you can even add things like HTML tables:”, “”, &quot;
+<table>
+“,”
+<tr>
+“,”
+<th>
+Header 1
+</th>
+“,”
+<th>
+Header 2
+</th>
+“,”
+</tr>
+“,”
+<tr>
+“,”
+<td>
+row 1, cell 1
+</td>
+“,”
+<td>
+row 1, cell 2
+</td>
+“,”
+</tr>
+“,”
+<tr>
+“,”
+<td>
+row 2, cell 1
+</td>
+“,”
+<td>
+row 2, cell 2
+</td>
+“,”
+</tr>
+“,”
+</table>
+<p>&quot; ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “## Local files” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “If you have local files in your Notebook directory, you can refer to these files in Markdown cells via relative URLs that are prefixed with <code>files/</code>:”, “”, &quot; files/[subdirectory/]<filename>“,”“,”For example, in the example Notebook folder, we have the Python logo:“,”“,” <img src=\"files/python-logo.svg\" />“,”“,”<img src=\"files/python-logo.svg\" />“,”“,”and a video with the HTML5 video tag:“,”“,” <video controls src=\"files/animation.m4v\" />“,”“,”<video controls src=\"files/animation.m4v\" />“,”“,”These do not embed the data into the notebook file, and require that the files exist when you are viewing the notebook.&quot; ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “### Security of local files” ] }, { “cell_type”: “markdown”, “metadata”: {}, “source”: [ “Note that this means that the IPython notebook server also acts as a generic file server”, “for files inside the same tree as your notebooks. Access is not granted outside the”, “notebook folder so you have strict control over what files are visible, but for this”, “reason it is highly recommended that you do not run the notebook server with a notebook”, “directory at a high level in your filesystem (e.g. your home directory).”, “”, “When you run the notebook in a password-protected manner, local file access is restricted”, “to authenticated users unless read-only views are active.” ] } ], “metadata”: { “kernelspec”: { “display_name”: “Python 3”, “language”: “python”, “name”: “python3” }, “language_info”: { “codemirror_mode”: { “name”: “ipython”, “version”: 3 }, “file_extension”: “.py”, “mimetype”: “text/x-python”, “name”: “python”, “nbconvert_exporter”: “python”, “pygments_lexer”: “ipython3”, “version”: “3.6.6” } }, “nbformat”: 4, “nbformat_minor”: 1 }</p>
+</body>
+</html>
