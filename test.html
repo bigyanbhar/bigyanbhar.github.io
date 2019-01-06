@@ -29,7 +29,7 @@ a.sourceLine { text-indent: -1em; padding-left: 1em; }
 pre.numberSource a.sourceLine
   { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
     border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
@@ -74,6 +74,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -82,9 +83,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1 id="top-heading">Top heading</h1>
 <p>hello world</p>
 <h2 id="code">Code</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="im">import</span> itertools</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="bu">print</span>(<span class="st">&quot;Hello world&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> itertools</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="bu">print</span>(<span class="st">&quot;Hello world&quot;</span>)</a></code></pre></div>
 <h2 id="latex">Latex</h2>
-<p><br /><span class="math display"><em>ρ</em><sub><em>t</em> + 1</sub> = <em>ρ</em><sub><em>t</em></sub> + <em>δ</em></span><br /></p>
+<p>Inline equation like <span class="math inline">\(e=mc^2\)</span> or <span class="math inline">\(\sqrt{100}=10\)</span> or <span class="math inline">\(\sqrt[3]{1000}=10\)</span>.</p>
+<p><span class="math display">\[ \rho_{t+1} = \rho_{t} + \delta \]</span></p>
 </body>
 </html>
