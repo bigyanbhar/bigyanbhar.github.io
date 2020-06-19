@@ -3,6 +3,7 @@ layout: default
 title: Bigyan Bhar
 mathjax: true
 ---
+
 0618_1049
 
 # Hi there, I'm Bigyan Bhar!
@@ -10,15 +11,21 @@ mathjax: true
 
 ## Code
 
+``` javascript
+function test() {
+    console.log("test");
+}
+```
+
 ```python
 import sys
 print("Hello world")
 ```
 
-~~~ python
-import sys
-print("Hello world")
-~~~
+``` bash
+export ABCD="halum"
+echo ${ABCD}
+```
 
 ## Mathjax test
 
