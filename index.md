@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bigyan Bhar
+mathjax: true
 ---
 <div class="blurb">
 
