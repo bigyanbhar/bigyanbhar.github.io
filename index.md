@@ -3,6 +3,7 @@ layout: default
 title: Bigyan Bhar
 mathjax: true
 ---
+0618_1049
 
 # Hi there, I'm Bigyan Bhar!
 > I write about tech stuff that fascinates me.
