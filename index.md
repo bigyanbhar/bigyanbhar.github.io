@@ -2,6 +2,7 @@
 layout: default
 title: Bigyan Bhar
 mathjax: true
+highlighter: rouge
 ---
 
 # Hi there, I'm Bigyan Bhar!
