@@ -26,11 +26,22 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    /* color: #333; */
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+}
+blockquote {
+    color: #bbbbbb;
+    background-color: #fefefe;
+    border-left-style: solid;
+    border-left-color: #666;
+    border-left-width: thick;
+    padding-left: 10pt;
+    margin-left: 2%;
+    font-size: small;
+    font-style: italic;
 }
 
 ul.posts { 

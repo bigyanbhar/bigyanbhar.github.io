@@ -10,18 +10,20 @@ mathjax: true
 > I write about tech stuff that fascinates me.
 
 ## Code
-
+JS
 ``` javascript
 function test() {
     console.log("test");
 }
 ```
 
+Python
 ```python
 import sys
 print("Hello world")
 ```
 
+Bash
 ``` bash
 export ABCD="halum"
 echo ${ABCD}
