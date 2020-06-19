@@ -4,9 +4,20 @@ title: Bigyan Bhar
 mathjax: true
 ---
 
-# Hi there, I'm Bigyan Bhar! (বিজ্ঞান ভড়)
+# Hi there, I'm Bigyan Bhar!
+> I write about tech stuff that fascinates me.
 
----
+## Code
+
+```python
+import sys
+print("Hello world")
+```
+
+~~~ python
+import sys
+print("Hello world")
+~~~
 
 ## Mathjax test
 
@@ -16,6 +27,3 @@ divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
 The kerel summation radius $r$ is equal to the N-simplex height $h$.
 
 $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
-
----
-
