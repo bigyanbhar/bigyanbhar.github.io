@@ -1,3 +1,9 @@
+---
+layout: default
+title: Bigyan Bhar
+mathjax: true
+---
+
 # Top heading
 
 hello world
