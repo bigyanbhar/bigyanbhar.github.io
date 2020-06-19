@@ -3,7 +3,6 @@ layout: default
 title: Bigyan Bhar
 mathjax: true
 ---
-<div class="blurb">
 
 # Hi there, I'm Bigyan Bhar! (বিজ্ঞান ভড়)
 
@@ -19,6 +18,4 @@ The kerel summation radius $r$ is equal to the N-simplex height $h$.
 $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
 
 ---
-
-</div><!-- /.blurb -->
 
