@@ -10,7 +10,7 @@ mathjax: true
 
 Equation in text $$\sqrt{100}=10$$. Some text after.
 
-$$\frac{2}{3} = 0.666...$$
+$\frac{2}{3} = 0.666...$
 
 </div><!-- /.blurb -->
 
